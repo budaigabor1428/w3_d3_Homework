@@ -12,9 +12,11 @@ artist2.save()
 
 album1 = Album.new({'title' => 'Blackstar', 'genre' => 'rock', 'artist_id' => artist1.id })
 album1.save()
+album2 = Album.new({'title' => 'Amo', 'genre' => 'rock', 'artist_id' => artist2.id })
+album2.save()
 
 artist = Artist.all()
-# album = Album.all()
+album = Album.all()
 
 
 binding.pry
